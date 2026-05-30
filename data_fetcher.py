@@ -30,6 +30,7 @@ logger = logging.getLogger(__name__)
 #   - month: last 6 years of monthly bars
 INTERVALS = {
     "1min":  {"minutes": 1,    "lookback_days": 2,     "chunk_days": 2,    "resample": None},
+    "5min":  {"minutes": 5,    "lookback_days": 5,     "chunk_days": 5,    "resample": None},
     "1hour": {"minutes": 60,   "lookback_days": 30,    "chunk_days": 30,  "resample": None},
     "day":   {"minutes": 1440, "lookback_days": 365 * 8 + 60, "chunk_days": 365,  "resample": None},
     "week":  {"minutes": 1440, "lookback_days": 365 * 8 + 60, "chunk_days": 365,  "resample": "W-MON"},
